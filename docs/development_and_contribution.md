@@ -43,6 +43,20 @@ backend will need to be restarted manually.
 3. Build the electron app `npm run package`
 4. The application is now in the `out` folder e.g. `out/looksyk-linux-x64/looksyk`
 
+## Run the electron app locally
+
+1. Change into the application-wrapper directory `cd application-wrapper/Looksyk/`
+2. Install electron dependencies `npm install`
+3. Run the application `npm run start`
+
+To run with arguments (see `OptionsArgs` for available arguments):
+
+```
+npm run start -- -- --example-looksyk-argument 1234
+```
+
+The two `--` are necessary to separate the arguments for the application-wrapper from the arguments to `npm run` and the arguments to `electron-forge start` (which is called by npm-run, see `scripts` section of `package.json`).
+
 ## Contribution Guidelines
 
 Contributions are welcome! Here are the steps to contribute:
