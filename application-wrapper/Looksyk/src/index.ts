@@ -104,6 +104,7 @@ function pollServer() {
 
 
 const serverUp: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+console.log(`Spawning server '${apiServerCmd}' with args '${apiServerArgs}' in '${pwd}'...`)
 const serverProcess = spawn(apiServerCmd, apiServerArgs, {cwd: pwd});
 serverProcess.stdout.on('data', (data: unknown) => {
     console.log(`stdout: ${data}`);
@@ -118,6 +119,7 @@ if (require('electron-squirrel-startup')) {
     app.quit();
 }
 
+console.log("Creating main window...")
 const createWindow = async (): Promise<void> => {
     pollServer();
     await firstValueFrom(serverUp.pipe(filter((up) => up)));
