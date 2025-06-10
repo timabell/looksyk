@@ -31,12 +31,11 @@ in [What are the key selling points compared to other knowledge platforms?](#wha
 
 ### Further Reading
 
-- [idea and technical concept](https://sebastianrzk.github.io/Looksyk/idea_and_technical_concept.html)
-- [Install + Run](https://sebastianrzk.github.io/Looksyk/installation.html)
-- [Migrate Your Existing Logseq Graph](https://sebastianrzk.github.io/Looksyk/migration_from_logseq.html)
-- [Configuration and Usage](https://sebastianrzk.github.io/Looksyk/usage.html)
-- [Development Guide and Contribution Guidelines](https://sebastianrzk.github.io/Looksyk/development_and_contribution.html)
-- [Changelog](https://sebastianrzk.github.io/Looksyk/changelog.html)
+- [idea and technical concept](docs/idea_and_technical_concept.md)
+- [Install + Run](docs/installation.md)
+- [Migrate Your Existing Logseq Graph](docs/migration_from_logseq.md)
+- [Configuration and Usage](docs/usage.md)
+- [Changelog](docs/changelog.md)
 
 ## Introduction
 
@@ -107,9 +106,16 @@ Install it and try it out! [Installation Guide](https://sebastianrzk.github.io/L
 * Dynamic backend plugins
 * Server version / multi user / rcs
 * i18n
-* Sync with other devices. Please use other tools
-  like [Nextcloud](https://nextcloud.com/install/), [git](https://git-scm.com/)
-  or [OneDrive](https://www.microsoft.com/de-de/microsoft-365/onedrive/online-cloud-storage) to sync your knowledge base
+* Sync with other devices. Please use other tools to sync your knowledge base such as
+	* [Microsoft OneDrive](https://www.microsoft.com/microsoft-365/onedrive/)
+	* [Dropbox](https://www.dropbox.com/)
+	* [Nextcloud](https://nextcloud.com/)
+	* [Syncthing](https://syncthing.net/)
+	* [git](https://git-scm.com/)
+
+## Development
+
+- [Development Guide and Contribution Guidelines](docs/development_and_contribution.md)
 
 ## License
 
